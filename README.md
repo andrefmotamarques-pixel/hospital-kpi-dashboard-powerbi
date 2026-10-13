@@ -43,11 +43,11 @@ A PDF export of the full report is in [`hospital_kpi_report.pdf`](hospital_kpi_r
 
 ## Data
 
-Synthetic patient records generated with [Synthea](https://synthetichealth.github.io/synthea/), so no real patient data is involved. The source tables are encounters, patients, payers, procedures and organizations. See `data/data_dictionary.csv` for field descriptions and `data/citation.txt` for the reference. The raw CSVs are not included, but the data is embedded in the `.pbix` file.
+Synthetic patient records generated with [Synthea](https://synthetichealth.github.io/synthea/), so no real patient data is involved. The source tables are encounters, patients, payers, procedures and organizations. The raw CSV files the report was built from are in `data/raw/`. See `data/data_dictionary.csv` for field descriptions and `data/citation.txt` for the reference. The data is also embedded in the `.pbix` file, so the report opens without them.
 
 ## How to open
 
-To view it without Power BI, open `hospital_kpi_report.pdf`. To explore it interactively, download `hospital_kpi_report.pbix` and open it in [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (free, Windows).
+To view it without Power BI, open `hospital_kpi_report.pdf`. To explore it interactively, download `hospital_kpi_report.pbix` and open it in [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (free, Windows). To refresh the data from the CSV files, open *Transform data › Data source settings* and point each source to the `data/raw/` folder of your copy of the repository.
 
 ## Tech stack
 
